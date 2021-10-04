@@ -1,0 +1,29 @@
+.logo {
+  text-align: center;
+}
+
+#downloadContainerLegal {
+  margin-bottom: 0.5rem;
+}
+
+.inner-container {
+  max-width: 800px;
+}
+
+.list li {
+  list-style-type: none;
+}
+
+a.btn.action {
+  width: 12rem;
+  background-color: #83c36d;
+  border-color: #83c36d;
+}
+
+.logo-section,
+.description-title,
+.description-images,
+.description-text,
+.description-buttons {
+  margin-top: 2rem;
+}

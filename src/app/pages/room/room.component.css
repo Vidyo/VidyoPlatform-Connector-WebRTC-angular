@@ -1,0 +1,442 @@
+::ng-deep body {
+  overflow: hidden;
+}
+
+.left-panel {
+  max-width: 2.5em;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.left-panel.expanded {
+  max-width: 25rem;
+}
+
+.left-panel.expanded .logo {
+  cursor: pointer;
+}
+
+.left-panel aside.inner {
+  height: 100%;
+  min-height: 100vh;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.left-panel .section-form {
+  opacity: 1;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 15rem);
+}
+
+.left-panel .section-form form {
+  margin-right: 6px;
+}
+
+.left-panel .section-form .col.label,
+.left-panel .section-form .col.label label {
+  width: 8rem;
+  max-width: 8rem;
+}
+
+.left-panel .form-check.form-switch {
+  margin-top: 0.5rem;
+}
+
+.expand-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: text-bottom;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: none;
+}
+
+.left-panel.collapsed {
+  overflow: hidden;
+  max-width: 2.5em;
+  transition: max-width 600ms ease-out;
+}
+
+.left-panel.expanded {
+  /* overflow: hidden; */
+  max-width: 25rem;
+  transition: max-width 600ms ease-out;
+}
+
+.left-panel .section-form label {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 8px;
+}
+
+.left-panel.collapsed .section-form {
+  /* overflow: hidden;*/
+  opacity: 0;
+  transition: opacity 600ms ease-out;
+}
+
+.left-panel .form-group {
+  margin-top: 1rem;
+}
+
+.left-panel .form-group .row {
+  /* margin-top: 1rem; */
+  flex-wrap: nowrap;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+#clientVersion {
+  font-size: 0.7rem;
+}
+
+.toolbar-icon {
+  width: 100px;
+  height: 60px;
+  background-size: 32px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(19, 38, 58);
+  border: 0;
+}
+
+.icon-camera {
+  background-image: url("/assets/images/cameraOn.png");
+}
+.icon-camera-off {
+  background-image: url("/assets/images/cameraOff.png");
+}
+
+.icon-phone {
+  background-image: url(/assets/images/callStart.png);
+}
+.icon-phone-off {
+  background-image: url(/assets/images/callEnd.png);
+}
+
+.icon-mic {
+  background-image: url(/assets/images/microphoneOn.png);
+}
+.icon-mic-off {
+  background-image: url(/assets/images/microphoneOff.png);
+}
+
+.icon-speaker {
+  background-image: url(/assets/images/speakerOn.png);
+}
+.icon-speaker-off {
+  background-image: url(/assets/images/speakerOff.png);
+}
+
+.icon-chat {
+  background-image: url(/assets/images/chat.png);
+}
+
+.icon-chat-off {
+  background-image: url(/assets/images/chat.png);
+}
+
+#connectionFooter .status {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 1rem;
+}
+
+.nav-tabs {
+  width: 100%;
+}
+.nav-tabs .nav-item {
+  width: 50%;
+}
+
+.nav-tabs,
+.nav-tabs a {
+  border: none;
+  border-radius: 0;
+}
+
+.nav-tabs .first {
+  color: white;
+  width: 100%;
+}
+
+.right-panel .tab-content .submit-button {
+  width: 100%;
+}
+
+.nav-tabs .second {
+  color: black;
+}
+
+div.right-panel.expanded {
+  max-width: 20rem;
+  overflow: hidden;
+  transition: max-width 600ms ease-out;
+}
+div.right-panel.collapsed {
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 600ms ease-in;
+}
+
+div.right-panel.collapsed aside {
+  /* display: none;*/
+  overflow: hidden;
+}
+
+/*
+div.right-panel.expanded aside {
+  display: block;
+}
+*/
+
+div.right-panel #messageBox {
+  max-height: 58vh;
+  height: 58vh;
+  overflow-y: auto;
+  margin: 1rem 0;
+}
+
+div.right-panel footer {
+  max-width: 19rem;
+  right: 1rem;
+}
+
+div.right-panel footer textarea {
+  height: calc(40vh - 10rem);
+}
+
+.left-panel .advanced-content-off {
+  display: none;
+  overflow: hidden;
+  transition: display 600ms ease-in;
+}
+
+.left-panel .advanced-content-on {
+  display: block;
+  overflow: hidden;
+  transition: display 600ms ease-in;
+}
+
+.left-panel .form-switch {
+  margin-top: 1.5rem;
+}
+
+.left-panel .section-form .form-switch label.form-check-label {
+  padding-top: 0;
+}
+
+#renderer {
+  width: 100%;
+  max-height: 80vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem !important;
+  transition: width 600ms;
+}
+
+::ng-deep .video-wrapper video {
+  width: 100%;
+}
+
+::ng-deep #renderer .video-overlay .video-control-views-wrapper,
+::ng-deep #renderer .video-overlay .video-tile-controls,
+::ng-deep #renderer .video-overlay .video-display-name {
+  display: none;
+}
+
+::ng-deep #renderer .video-overlay .volume-indicator {
+  height: 10px;
+  width: 100%;
+  background-color: #bbb;
+}
+
+::ng-deep div#renderer .video-placeholder {
+  display: none;
+}
+
+::ng-deep .video-wrapper img.popup-application {
+  display: none;
+}
+
+.never-show {
+  display: none !important;
+}
+
+.hide {
+  display: none;
+}
+::ng-deep #renderer.hide-box.disconnected .video-overlay .volume-indicator,
+::ng-deep .hide-box.disconnected video {
+  width: 0;
+  transition: width 600ms;
+}
+#renderer.hide-box.disconnected {
+  background-image: url(/assets/images/cameraOff.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#renderer.connected {
+  max-height: 90vh !important;
+}
+
+#renderer.connected video {
+  width: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+::ng-deep #renderer .video-container.local-track video {
+  max-height: 70vh;
+}
+
+::ng-deep #renderer.connected .video-container.local-track video {
+  max-height: 20vh;
+}
+
+::ng-deep #renderer .video-container.remote-track video {
+  max-height: 60vh;
+  height: 100%;
+  height: 100vh;
+}
+
+::ng-deep #renderer .video-container.remote-track {
+  display: table-cell;
+  padding: 0.5rem;
+}
+
+::ng-deep #renderer .video-container.remote-track .volume-indicator {
+  display: none;
+}
+
+::ng-deep #renderer .remote-track .video-overlay .video-display-name {
+  display: table-cell;
+  color: white;
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::ng-deep #renderer .remote-track .video-overlay .video-display-name span {
+  padding: 0.5rem;
+}
+
+/*
+::ng-deep .hide-box .video-wrapper img.popup-application {
+  display: block;
+}
+*/
+/*
+#renderer.hide-box {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0 !important;
+  transition: width 600ms;
+}
+*/
+
+#messages {
+  color: gray;
+  font-size: 1rem;
+}
+
+#messages .error-message {
+  color: red;
+}
+
+.desktop-share-button {
+  width: 100%;
+}
+
+.right-panel .nav-tabs .nav-link {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+  color: black;
+}
+
+.right-panel .nav-tabs .nav-link.active {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+  color: white;
+}
+
+.right-panel .no-participants-list {
+  margin-top: 1rem;
+  border-bottom: 1px black solid;
+  border-color: #ccc;
+  color: #777;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.right-panel .participants-list {
+  margin-top: 1rem;
+  color: #777;
+  width: 100%;
+}
+.right-panel .participants-list tr {
+  /*
+  border-bottom: 1px black solid;
+  border-color: #ccc;
+  */
+  height: 2.2rem;
+}
+
+.right-panel .participants-list .name {
+  padding-left: 6px;
+}
+
+.right-panel .participants-list .toolbar-icon {
+  width: 42px;
+  height: 32px;
+  border-left: 6px solid white;
+}
+
+.right-panel .participants-list-status {
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+
+.right-panel .user-message-area button[disabled] {
+  background: #e84b40 !important;
+  color: white;
+  opacity: 1;
+}
+
+.right-panel #messageBox .text-message {
+  white-space: pre-line;
+}
+
+#messageBox .button-white {
+  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E");
+  background-position: center/1em;
+  background-repeat: auto no-repeat;
+}
+
+.right-panel .submit-button {
+  background-color: rgb(22 156 94);
+}
+
+.chat-button .badge {
+  top: 30%;
+  left: 60%;
+}
+
+.right-panel .nav-tabs .badge {
+  left: 80%;
+  top: 50%;
+}
+
+#connectionFooter {
+  height: 56px;
+}

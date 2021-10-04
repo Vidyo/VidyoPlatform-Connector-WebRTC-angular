@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <header class="inner-container mx-auto">
+        <div class="row logo-section">
+            <div class="col-12">
+                <a routerLink=''>
+                    <img alt="logo" class="logo mx-auto d-block" src="{{img}}/VidyoIO-LogoHorizontal-Dark@2x.png">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="inner-container mx-auto">
+        <div class="row description-title">
+            <div class="col-12">
+                <h1 class="text-center">How would you like to join the call?</h1>
+            </div>
+        </div>
+
+
+        <div class="row description-images">
+            <div class="col-6 text-center">
+                <img src="{{img}}/web.svg">
+            </div>
+            <div class="col-6 text-center">
+                <img src="{{img}}/desktop.svg">
+            </div>
+        </div>
+
+        <div class="row description-text">
+            <div class="col-6">
+                <ul class="list">
+                    <li class="helperCheck"><img src="{{img}}/checkmark.svg">&nbsp;&nbsp; Join the call immediately
+                    </li>
+                    <li class="helperCheck"><img src="{{img}}/checkmark.svg">&nbsp;&nbsp; No downloads or installations
+                    </li>
+                    <li class="helperCheck"><img src="{{img}}/checkmark.svg">&nbsp;&nbsp; Best quality
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-6">
+                <ul class="list">
+                    <li class="helperCheck"><img src="{{img}}/checkmark.svg">&nbsp;&nbsp;
+                        Join meetings faster with fewer clicks
+                    </li>
+                    <li class="helperCheck"><img src="{{img}}/checkmark.svg">&nbsp;&nbsp;
+                        Share seamlessly without extensions
+                    </li>
+                    <li class="helperCheck"><img src="{{img}}/checkmark.svg">&nbsp;&nbsp;
+                        Best quality
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center description-buttons">
+            <div class="col-6">
+                <a routerLink="/room" class="btn btn-success action" role="button">Join via the browser</a>
+            </div>
+            <div class="col-6">
+                <a (click)="joinViaApp()" class="btn btn-success action" role="button">Join via the app</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<footer id="downloadContainerLegal" class="container-fluid fixed-bottom text-center">
+    By clicking "Join" or "Download", you agree to our <a target="_blank" style="color: #6a6a6a;"
+        href="http://www.vidyo.com/eula/">End-User License Agreement</a> &amp; <a target="_blank"
+        style="color: #6a6a6a;" href="http://www.vidyo.com/privacy-policy/">Privacy Policy</a>.
+</footer>
