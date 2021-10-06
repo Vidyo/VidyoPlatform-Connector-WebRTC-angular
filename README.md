@@ -35,3 +35,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 # Angular help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+#Known issues
+
+##OS Linux - Ubuntu
+
+`npm install` will install an invalid Bootstrap framework (some icons, colors, and widgets are displayed incorrectly). You can use Windows installation or download the correct version from the dev_env_fix directory.
