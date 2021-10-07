@@ -100,7 +100,7 @@ export class Settings {
 
     sideBarForm: FormGroup = new FormGroup({});
     host: FormControl = new FormControl("https://test.platform.vidyo.io");
-    roomKey: FormControl = new FormControl("oLeVLfNufz");
+    roomKey: FormControl = new FormControl();
     displayName: FormControl = new FormControl("webRTC Guest");
     loggerUrl: FormControl = new FormControl();
     roomPin: FormControl = new FormControl();
