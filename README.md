@@ -4,6 +4,10 @@ A video conference and chat application.
 
 # Prerequisites
 
+- Node.js
+- TypeScript
+- Angular
+
 ## Install node modules
 
 Run `npm install`
