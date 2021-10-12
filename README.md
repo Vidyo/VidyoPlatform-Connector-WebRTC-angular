@@ -44,4 +44,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## CORS issue
 
-Install Cross Domain - CORS extension for Chrome browser.
+Install Cross Domain - CORS extension for Chrome browser (https://chrome.google.com/webstore/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai).
