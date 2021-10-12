@@ -41,3 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## OS Linux - Ubuntu
 
 `npm install` will install an invalid Bootstrap framework (some icons, colors, and widgets are displayed incorrectly). You can use Windows installation or download the correct version from the dev_env_fix directory.
+
+## CORS issue
+
+Install Cross Domain - CORS extension for Chrome browser.
