@@ -4,15 +4,17 @@ A video conference and chat application.
 
 # Prerequisites
 
+You can use global or local installation (local installation is easier for solving problems).
+
 ## Angular 
 
 Recommended version 12+ (tested v12.2)
 
 Linux<br>
-`sudo npm install -g @angular/cli` or `sudo npm install @angular/cli`
+`sudo npm install -g @angular/cli` or `sudo npm install @angular/cli` (local installation)
 
 Windows<br>
-`npm install -g @angular/cli` or `npm install @angular/cli`
+`npm install -g @angular/cli` or `npm install @angular/cli` (local installation)
 
 ## Node.js
 
@@ -30,24 +32,26 @@ Node.js includes npm.
 Recommended version 8.0+ (tested v8.1.0)
 
 Linux<br>
-`sudo apt install npm` // optional      
-`sudo npm install -g npm` // install the latest version
+`sudo apt install npm` // optional - when npm is not installed      
+`sudo npm install -g npm` // install the latest version (global installation) <br>
+`sudo npm install npm` // optional - install the latest version (local installation)
 
 Windows<br>
-`npm install -g npm` // install the latest version
+`npm install -g npm` // install the latest version (global installation)<br>
+`npm install npm`    // install the latest version (local installation)
 
-# Install node modules
+# 1. Install external modules/dependencies
 
 Linux/Windows<br>
 `npm install`
 
-# Run the application
+# 2. Run the application
 
 ## Development server
 
 Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-# Development and testing
+# 3. Development and testing
 
 ## Code scaffolding
 
@@ -65,11 +69,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-# Angular help
+# 4. Angular help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# Known issues
+# 5. Known issues
 
 ## ng-bootstrap and Bootstrap
 
