@@ -29,19 +29,19 @@ https://nodejs.org/en/
 Node.js includes npm.
 Recommended version 8.0+ (tested v8.1.0)
 
-Linux
+Linux<br>
 `sudo apt install npm` // optional      
 `sudo npm install -g npm` // install the latest version
 
 Windows<br>
 `npm install -g npm` // install the latest version
 
-## Install node modules
+# Install node modules
 
 Linux/Windows<br>
 `npm install`
 
-# Run application
+# Run the application
 
 ## Development server
 
