@@ -71,13 +71,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Known issues
 
-## mg-bootstrap and Bootstrap
+## ng-bootstrap and Bootstrap
 
 ng-bootstrap v10.0 works only with Bootstrap 4.5 (doesn't support Bootstrap 5.x)
 
 ## ng-bootstrap beta and Bootstrap 5
 
-Tooltip for left panel Show/Hide button must have `bottom` value. Value `right` creates a bug now.
+Tooltip for left panel Show/Hide button must have `bottom` value. Value `right` creates a bug now (Ubuntu/Chrome).
 
 `placement="bottom"`
 
