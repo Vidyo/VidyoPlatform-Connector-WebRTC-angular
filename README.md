@@ -1,12 +1,45 @@
-# Hunter version 1.0.0 (VidyoPlatform-connector-angular)
+# Hunter version 1.1.0 (VidyoPlatform connector WebRTC - Angular version)
 
 A video conference and chat application.
 
 # Prerequisites
 
+## Angular 
+
+Recommended version 12+ (tested v12.2)
+
+Linux
+`sudo npm install -g @angular/cli` // or `sudo npm install @angular/cli`
+
+Windows
+`npm install -g @angular/cli` // or `npm install @angular/cli`
+
+## Node.js
+
+Recommended version 16.0+ (tested v16.3)
+
+Linux
+`sudo apt install nodejs` // or install a snap version https://snapcraft.io/node
+
+Windows 
+https://nodejs.org/en/
+
+## npm
+
+Node.js includes npm.
+Recommended version 8.0+ (tested v8.1.0)
+
+Linux
+`sudo apt install npm` // optional      
+`sudo npm install -g npm` // install the latest version
+
+Windows
+`npm install -g npm` // install the latest version
+
 ## Install node modules
 
-Run `npm install`
+Linux/Windows
+`npm install`
 
 # Run application
 
@@ -38,6 +71,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Known issues
 
-## OS Linux - Ubuntu
+## mg-bootstrap and Bootstrap
 
-`npm install` will install an invalid Bootstrap framework (some icons, colors, and widgets are displayed incorrectly). You can use Windows installation or download the correct version from the dev_env_fix directory.
+ng-bootstrap v10.0 works only with Bootstrap 4.5 (doesn't support Bootstrap 5.x)
+
+## ng-bootstrap beta and Bootstrap 5
+
+Tooltip for left panel Show/Hide button must have `bottom` value. Value `right` creates a bug now.
+
+`placement="bottom"`
+
