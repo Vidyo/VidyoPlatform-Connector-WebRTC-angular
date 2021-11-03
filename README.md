@@ -9,17 +9,17 @@ A video conference and chat application.
 Recommended version 12+ (tested v12.2)
 
 Linux<br>
-`sudo npm install -g @angular/cli` // or `sudo npm install @angular/cli`
+`sudo npm install -g @angular/cli` or `sudo npm install @angular/cli`
 
 Windows<br>
-`npm install -g @angular/cli` // or `npm install @angular/cli`
+`npm install -g @angular/cli` or `npm install @angular/cli`
 
 ## Node.js
 
 Recommended version 16.0+ (tested v16.3)
 
 Linux<br>
-`sudo apt install nodejs` // or install a snap version https://snapcraft.io/node
+`sudo apt install nodejs` or install a snap version https://snapcraft.io/node
 
 Windows <br>
 https://nodejs.org/en/
