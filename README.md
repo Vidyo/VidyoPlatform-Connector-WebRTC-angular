@@ -1,6 +1,6 @@
 # Hunter (VidyoPlatform connector WebRTC - Angular version)
 
-A video conference and chat application.
+A video conference and chat application.<br>
 Version 1.1.0
 
 # Prerequisites
