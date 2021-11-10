@@ -155,6 +155,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col label">
+                                        <label>App Version</label>
+                                        <!--
+                                        <i class="bi bi-info-circle version-icon" placement="bottom"
+                                            ngbTooltip="Version {{appVersion}}"></i>
+                                            -->
+                                    </div>
+                                    <div class="col"><label>{{appVersion}}</label></div>
+                                </div>
                             </div>
                         </div>
 
@@ -228,7 +238,8 @@
                                             formControlName="chat"></textarea>
                                         <button type="submit" (click)="sendMessage(chatForm.value)"
                                             [disabled]="!connected"
-                                            class="text-center btn submit-button bg-success bold text-white">{{chatSubmitButtonLabel}}</button>
+                                            class="text-center btn submit-button bg-success text-white"><span
+                                                [class]="connected ? '': 'grow-animation-small' + ' inline-block'">{{chatSubmitButtonLabel}}</span></button>
                                     </footer>
                                 </div>
                             </form>
@@ -249,9 +260,14 @@
                                     <td class="action-type">{{p.action}}</td>
                                 </tr>
                             </table>
-                            <div class="no-participants-list" *ngIf="participantsList.length == 0">Click on the <span
-                                    class="bold">Join
-                                    Conference</span> button.</div>
+                            <div class="no-participants-list text-center" *ngIf="participantsList.length == 0"><span
+                                    class="">Join Conference</span>
+                                <!-- <i class="bi bi-arrow-right icon"></i>-->
+                                <button (click)="joinLeave()" type="button" placement="top"
+                                    ngbTooltip="{{phoneTooltip}}"
+                                    [class]="phoneIcon + ' btn-expand  standard-icon grow-animation'"
+                                    [attr.aria-label]="phoneTooltip"></button>
+                            </div>
 
                             <div [class]="(participantsStatus == '' ? '' : 'show') + ' bg-success text-white participants-list-status toast align-items-center'"
                                 role="alert" aria-live="assertive" aria-atomic="true">

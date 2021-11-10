@@ -14,7 +14,7 @@ declare var VidyoClientLib: any;
 export class RoomComponent extends VidyoConnector implements OnInit {
 
   VCLib = VidyoClientLib;
-
+  
   constructor(public router: Router) {
 
     super();

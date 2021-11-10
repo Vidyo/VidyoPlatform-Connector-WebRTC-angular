@@ -3,7 +3,7 @@ import { AppConfig } from "src/app/app-config";
 import { FormOption } from "src/app/interfaces/form-option";
 
 export class Settings {
-
+    appVersion : string = "1.1.1";
     vc: any;
     state: any = "READY"; // hardcoded - not needed in this version
     rtr: any;
@@ -19,7 +19,7 @@ export class Settings {
     connected: boolean = false;
     videoNodeDetectorInterval: any;
     participantsStatus: string = "";
-    chatSubmitButtonLabelTexts = ["Join a meeting", "Send"]
+    chatSubmitButtonLabelTexts = ["Join Conference", "Send"]
     chatSubmitButtonLabel: string = this.chatSubmitButtonLabelTexts[0];
 
     cameraPrivacy = false;

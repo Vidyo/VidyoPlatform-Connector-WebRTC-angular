@@ -4,7 +4,7 @@ A video conference and chat application.<br>
 
 **Codename:** Hunter<br>
 **Framework:** Angular<br>
-**Version:** 1.1.0<br>
+**Version:** 1.1.1<br>
 
 ## Prerequisites
 
@@ -76,6 +76,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## 4. Angular help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## 5. Used frameworks
+
+1. Angular 12
+2. Bootstrap 5
+3. Bootstrap icons
+4. ng-bootstrap 10 beta
 
 ## 5. Known issues
 

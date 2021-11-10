@@ -106,40 +106,81 @@
   border: 0;
 }
 
+.standard-icon {
+  margin-left: 1rem;
+  width: 16px;
+  height: 16px;
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
+}
+
+.grow-animation { 
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+
+@keyframes grow {
+0% { transform: scale(1); }
+50% { transform: scale(1.5);  }
+100% { transform: scale(1); }
+}
+
+.grow-animation-small { 
+  animation-name: grow-small;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+
+@keyframes grow-small {
+0% { transform: scale(1); }
+50% { transform: scale(1.1);  }
+100% { transform: scale(1); }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .icon-camera {
-  background-image: url("/assets/images/cameraOn.png");
+  background-image: url('~src/assets/images/cameraOn.png');
 }
 .icon-camera-off {
-  background-image: url("/assets/images/cameraOff.png");
+  background-image: url('~src/assets/images/cameraOff.png');
 }
 
 .icon-phone {
-  background-image: url(/assets/images/callStart.png);
+  background-image: url('~src/assets/images/callStart.png');
 }
 .icon-phone-off {
-  background-image: url(/assets/images/callEnd.png);
+  background-image: url('~src/assets/images/callEnd.png');
 }
 
 .icon-mic {
-  background-image: url(/assets/images/microphoneOn.png);
+  background-image: url('~src/assets/images/microphoneOn.png');
 }
 .icon-mic-off {
-  background-image: url(/assets/images/microphoneOff.png);
+  background-image: url('~src/assets/images/microphoneOff.png');
 }
 
 .icon-speaker {
-  background-image: url(/assets/images/speakerOn.png);
+  background-image: url('~src/assets/images/speakerOn.png');
 }
 .icon-speaker-off {
-  background-image: url(/assets/images/speakerOff.png);
+  background-image: url('~src/assets/images/speakerOff.png');
 }
 
 .icon-chat {
-  background-image: url(/assets/images/chat.png);
+  background-image: url('~src/assets/images/chat.png');
 }
 
 .icon-chat-off {
-  background-image: url(/assets/images/chat.png);
+  background-image: url('~src/assets/images/chat.png');
 }
 
 #connectionFooter .status {
@@ -277,7 +318,7 @@ div.right-panel footer textarea {
   transition: width 600ms;
 }
 #renderer.hide-box.disconnected {
-  background-image: url(/assets/images/cameraOff.png);
+  background-image: url('~src/assets/images/cameraOff.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -367,9 +408,13 @@ div.right-panel footer textarea {
   color: white;
 }
 
+.right-panel .no-participants-list .icon {
+  margin-left: 0.4rem;
+}
+
 .right-panel .no-participants-list {
   margin-top: 1rem;
-  border-bottom: 1px black solid;
+ /* border-bottom: 1px black solid;*/
   border-color: #ccc;
   color: #777;
 }
@@ -407,7 +452,8 @@ div.right-panel footer textarea {
 }
 
 .right-panel .user-message-area button[disabled] {
-  background: #e84b40 !important;
+  /* background: #e84b40 !important; */ /* red */
+  background: #999 !important;
   color: white;
   opacity: 1;
 }
