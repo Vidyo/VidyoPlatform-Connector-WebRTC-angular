@@ -52,7 +52,7 @@ export class Settings {
     showCameraFrame = "";
     defaultFormOption: FormOption = { value: "-1", label: "None" };
     micDevices: FormOption[] = [{ value: "0", label: "None" }];
-    videoDevices: FormOption[] = [{ value: "0", label: "None" }];
+    videoDevices: FormOption[] = [{ value: "0", label: "None", selected: true }];
     speakerDevices: FormOption[] = [{ value: "0", label: "None" }];
     monitorDevices: FormOption[] = [{ value: "0", label: "None", selected: true }];
     videoElement: any;
@@ -108,7 +108,7 @@ export class Settings {
     extDataType: FormControl = new FormControl();
 
 
-    camera: FormControl = new FormControl("default");
+    camera: FormControl = new FormControl("0");
     mic: FormControl = new FormControl("default");
     speaker: FormControl = new FormControl("default");
     cameraShare: FormControl = new FormControl("none");
@@ -116,6 +116,7 @@ export class Settings {
     windowShare: FormControl = new FormControl("none");
 
     chatForm: FormGroup = new FormGroup({});
+    bottomPanelCamera = new FormGroup({});
     chat: FormControl = new FormControl({ value: '', disabled: !this.connected });
 
 }

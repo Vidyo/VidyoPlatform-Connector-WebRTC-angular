@@ -117,30 +117,42 @@
   border: 0;
 }
 
-.grow-animation { 
+.grow-animation {
   animation-name: grow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  }
-
-@keyframes grow {
-0% { transform: scale(1); }
-50% { transform: scale(1.5);  }
-100% { transform: scale(1); }
 }
 
-.grow-animation-small { 
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.grow-animation-small {
   animation-name: grow-small;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  }
+}
 
 @keyframes grow-small {
-0% { transform: scale(1); }
-50% { transform: scale(1.1);  }
-100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .inline-block {
@@ -148,42 +160,42 @@
 }
 
 .icon-camera {
-  background-image: url('~src/assets/images/cameraOn.png');
+  background-image: url("~src/assets/images/cameraOn.png");
 }
 .icon-camera-off {
-  background-image: url('~src/assets/images/cameraOff.png');
+  background-image: url("~src/assets/images/cameraOff.png");
 }
 
 .icon-phone {
-  background-image: url('~src/assets/images/callStart.png');
+  background-image: url("~src/assets/images/callStart.png");
 }
 .icon-phone-off {
-  background-image: url('~src/assets/images/callEnd.png');
+  background-image: url("~src/assets/images/callEnd.png");
 }
 
 .icon-mic {
-  background-image: url('~src/assets/images/microphoneOn.png');
+  background-image: url("~src/assets/images/microphoneOn.png");
 }
 .icon-mic-off {
-  background-image: url('~src/assets/images/microphoneOff.png');
+  background-image: url("~src/assets/images/microphoneOff.png");
 }
 
 .icon-speaker {
-  background-image: url('~src/assets/images/speakerOn.png');
+  background-image: url("~src/assets/images/speakerOn.png");
 }
 .icon-speaker-off {
-  background-image: url('~src/assets/images/speakerOff.png');
+  background-image: url("~src/assets/images/speakerOff.png");
 }
 
 .icon-chat {
-  background-image: url('~src/assets/images/chat.png');
+  background-image: url("~src/assets/images/chat.png");
 }
 
 .icon-chat-off {
-  background-image: url('~src/assets/images/chat.png');
+  background-image: url("~src/assets/images/chat.png");
 }
 
-#connectionFooter .status {
+#roomFooter .status {
   position: absolute;
   bottom: 0.2rem;
   right: 1rem;
@@ -318,7 +330,7 @@ div.right-panel footer textarea {
   transition: width 600ms;
 }
 #renderer.hide-box.disconnected {
-  background-image: url('~src/assets/images/cameraOff.png');
+  background-image: url("~src/assets/images/cameraOff.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -414,7 +426,7 @@ div.right-panel footer textarea {
 
 .right-panel .no-participants-list {
   margin-top: 1rem;
- /* border-bottom: 1px black solid;*/
+  /* border-bottom: 1px black solid;*/
   border-color: #ccc;
   color: #777;
 }
@@ -483,6 +495,42 @@ div.right-panel footer textarea {
   top: 50%;
 }
 
-#connectionFooter {
+#roomFooter {
   height: 56px;
+}
+
+.drop-down-button-cameras {
+  width: 10px;
+  top: -25px;
+}
+
+.drop-down-button-cameras .toolbar-icon {
+  background-position: right;
+  color: white;
+  width: 10px;
+}
+
+.drop-down-button-cameras .toolbar-icon.btn:focus {
+  box-shadow: none;
+}
+
+.icon-camera.toolbar-icon {
+  width: 60 px;
+  background-position: right;
+}
+
+.drop-down-button-cameras select {
+  border: none;
+  outline: none;
+  padding: 0 3rem 0 1rem;
+  /* background-image: none; */
+  box-shadow: none;
+}
+
+.drop-down-button-cameras .dropdown-menu.show {
+  width: 24rem;
+}
+
+.shadow-small {
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7) !important;
 }

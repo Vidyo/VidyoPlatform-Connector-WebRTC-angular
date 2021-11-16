@@ -4,7 +4,8 @@ A video conference and chat application.<br>
 
 **Codename:** Hunter<br>
 **Framework:** Angular<br>
-**Version:** 1.1.1<br>
+**App version:** 1.2.0<br>
+**VidyoClient version:** 21.6.0.0027<br>
 
 ## Prerequisites
 
@@ -22,7 +23,8 @@ Windows<br>
 
 ### Node.js
 
-Recommended version 16.0+ (tested v16.3)
+Run: Recommended version 16.0 (tested v16.3)
+Build and deploy: Recommended version 14 (tested v14.18.1)
 
 Linux<br>
 `sudo apt install nodejs` or install a snap version https://snapcraft.io/node
@@ -33,7 +35,8 @@ https://nodejs.org/en/
 ### npm
 
 Node.js includes npm.
-Recommended version 8.0+ (tested v8.1.0)
+Run: Recommended version 8.0 (tested v8.1.0)
+Build and deploy: Recommended version 6.0 (tested v6.14.15)
 
 Linux<br>
 `sudo apt install npm` // optional - when npm is not installed      

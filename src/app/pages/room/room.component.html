@@ -44,6 +44,7 @@
                                     <label>Camera</label>
                                 </div>
                                 <div class="col">
+                                    <!--
                                     <select (change)="onCameraChange($event)" class="form-control"
                                         formControlName="camera">
                                         <option *ngFor="let device of videoDevices" [value]="device.value"
@@ -51,6 +52,7 @@
                                             {{device.label}}
                                         </option>
                                     </select>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -290,10 +292,10 @@
             </aside>
         </div>
     </div>
-    <footer id="connectionFooter" class="fixed-bottom bg-dark bg-gradient">
+    <footer id="roomFooter" class="fixed-bottom bg-dark bg-gradient">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <!-- <div class="col-2"></div> -->
+            <div class="col-10">
                 <div>
 
                     <div id="webcasting" title="Webcasting" class="toolbarButton"></div>
@@ -302,6 +304,27 @@
                     <button (click)="toggleCamera()" type="button" placement="top" ngbTooltip="{{cameraTooltip}}"
                         [class]="cameraIcon + ' bg-dark btn-expand toolbar-icon'"
                         [attr.aria-label]="cameraTooltip"></button>
+
+                    <div class="btn-group dropup drop-down-button-cameras">
+                        <button type="button" class="bg-dark btn-expand toolbar-icon btn dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false" [attr.aria-label]="cameraTooltip">
+                        </button>
+                        <ul class="dropdown-menu shadow-small ">
+                            <li>
+                                <form [formGroup]="bottomPanelCamera" novalidate>
+                                    <select (change)="onCameraChange($event)" class="form-control form-select"
+                                        formControlName="camera">
+                                        <option *ngFor="let device of videoDevices" [value]="device.value"
+                                            [attr.selected]='device!.selected ? "selected" : null'>
+                                            {{device.label}}
+                                        </option>
+                                    </select>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+
+
 
                     <button (click)="joinLeave()" type="button" placement="top" ngbTooltip="{{phoneTooltip}}"
                         [class]="phoneIcon + ' bg-dark btn-expand  toolbar-icon'"
