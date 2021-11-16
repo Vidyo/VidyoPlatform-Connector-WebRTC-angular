@@ -11,7 +11,7 @@ A video conference and chat application.<br>
 
 You can use global or local installation (local installation is easier for solving problems).
 
-### Angular 
+### Angular
 
 Recommended version 12+ (tested v12.2)
 
@@ -23,8 +23,8 @@ Windows<br>
 
 ### Node.js
 
-Run: Recommended version 16.0 (tested v16.3)
-Build and deploy: Recommended version 14 (tested v14.18.1)
+Run: Recommended version 16.0 (tested v16.3) <br>
+Build and deploy: Recommended version 14 (tested v14.18.1)<br>
 
 Linux<br>
 `sudo apt install nodejs` or install a snap version https://snapcraft.io/node
@@ -35,17 +35,17 @@ https://nodejs.org/en/
 ### npm
 
 Node.js includes npm.
-Run: Recommended version 8.0 (tested v8.1.0)
-Build and deploy: Recommended version 6.0 (tested v6.14.15)
+Run: Recommended version 8.0 (tested v8.1.0)<br>
+Build and deploy: Recommended version 6.0 (tested v6.14.15)<br>
 
 Linux<br>
-`sudo apt install npm` // optional - when npm is not installed      
+`sudo apt install npm` // optional - when npm is not installed  
 `sudo npm install -g npm` // install the latest version (global installation) <br>
 `sudo npm install npm` // optional - install the latest version (local installation)
 
 Windows<br>
 `npm install -g npm` // install the latest version (global installation)<br>
-`npm install npm`    // install the latest version (local installation)
+`npm install npm` // install the latest version (local installation)
 
 ## 1. Install external modules/dependencies
 
@@ -98,4 +98,3 @@ ng-bootstrap v10.0 works only with Bootstrap 4.5 (doesn't support Bootstrap 5.x)
 Tooltip for left panel Show/Hide button must have `bottom` value. Value `right` creates a bug now (Ubuntu/Chrome).
 
 `placement="bottom"`
-
