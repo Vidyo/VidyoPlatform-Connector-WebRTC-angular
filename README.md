@@ -34,7 +34,7 @@ https://nodejs.org/en/
 
 ### npm
 
-Node.js includes npm.
+Node.js includes npm.<br>
 Run: Recommended version 8.0 (tested v8.1.0)<br>
 Build and deploy: Recommended version 6.0 (tested v6.14.15)<br>
 
