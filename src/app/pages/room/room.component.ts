@@ -41,15 +41,21 @@ export class RoomComponent extends VidyoConnector implements OnInit {
       roomPin: this.roomPin,
       extData: this.extData,
       extDataType: this.extDataType,
-      mic: this.mic,
-      speaker: this.speaker,
       cameraShare: this.cameraShare,
       monitorShare: this.monitorShare,
       windowShare: this.windowShare,
     });
 
     this.bottomPanelCamera = new FormGroup({
-      camera: this.camera,
+      camera: this.camera
+    });
+
+    this.bottomPanelMic = new FormGroup({
+      mic: this.mic
+    });
+
+    this.bottomPanelSpeaker = new FormGroup({
+      speaker: this.speaker
     });
 
     this.initVC();

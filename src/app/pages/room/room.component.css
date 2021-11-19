@@ -499,27 +499,44 @@ div.right-panel footer textarea {
   height: 56px;
 }
 
-.drop-down-button-cameras {
-  width: 10px;
+#roomFooter .share-button {
   top: -25px;
+  position: relative;
 }
 
-.drop-down-button-cameras .toolbar-icon {
+#roomFooter .share-button .bi-projector {
+  width: 42px;
+  height: 42px;
+  color: white;
+}
+
+.drop-down-select-button {
+  width: 10px;
+  top: -25px;
+  right: 30px;
+  margin-right: -20px;
+}
+
+#roomFooter .drop-down-select {
+  left: -10px;
+  position: relative;
+}
+
+.drop-down-select-button .toolbar-icon {
   background-position: right;
   color: white;
   width: 10px;
 }
 
-.drop-down-button-cameras .toolbar-icon.btn:focus {
+.drop-down-select-button button {
+  z-index: 1;
+}
+
+.drop-down-select-button .toolbar-icon.btn:focus {
   box-shadow: none;
 }
 
-.icon-camera.toolbar-icon {
-  width: 60 px;
-  background-position: right;
-}
-
-.drop-down-button-cameras select {
+.drop-down-select-button select {
   border: none;
   outline: none;
   padding: 0 3rem 0 1rem;
@@ -527,7 +544,7 @@ div.right-panel footer textarea {
   box-shadow: none;
 }
 
-.drop-down-button-cameras .dropdown-menu.show {
+.drop-down-select-button .dropdown-menu.show {
   width: 24rem;
 }
 

@@ -3,7 +3,7 @@ import { AppConfig } from "src/app/app-config";
 import { FormOption } from "src/app/interfaces/form-option";
 
 export class Settings {
-    appVersion : string = "1.1.1";
+    appVersion: string = "1.2.1";
     vc: any;
     state: any = "READY"; // hardcoded - not needed in this version
     rtr: any;
@@ -70,6 +70,7 @@ export class Settings {
     cameraIcon: string = "icon-camera";
     cameraIconOff: string = "icon-camera-off";
     cameraTooltip: string = "Camera Privacy";
+    cameraTooltipOptions: string = "Choose a camera";
 
     phoneOn: boolean = true;
     phoneIcon: string = "icon-phone";
@@ -80,16 +81,20 @@ export class Settings {
     micIcon: string = "icon-mic";
     micIconOff: string = "icon-mic-off";
     micTooltip: string = "Microphone Privacy";
+    micTooltipOptions: string = "Choose a microphone";
 
     speakerOn: boolean = true;
     speakerIcon: string = "icon-speaker";
     speakerIConOff: string = "icon-speaker-off";
     speakerTooltip: string = "Speaker Privacy";
+    speakerTooltipOptions = "Choose a speaker";
 
     chatOn: boolean = true;
     chatIcon: string = "icon-chat";
     chatIconOff: string = "icon-chat-off";
     chatTooltip: string = "Show chat";
+
+    shareTooltip: string = "Share";
 
     img: string = AppConfig.settings.imgPath;
     leftPaneExpanded = true;
@@ -117,6 +122,8 @@ export class Settings {
 
     chatForm: FormGroup = new FormGroup({});
     bottomPanelCamera = new FormGroup({});
+    bottomPanelMic = new FormGroup({});
+    bottomPanelSpeaker = new FormGroup({});
     chat: FormControl = new FormControl({ value: '', disabled: !this.connected });
 
 }
