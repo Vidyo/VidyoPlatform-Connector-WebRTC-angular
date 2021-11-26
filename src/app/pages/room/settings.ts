@@ -3,7 +3,7 @@ import { AppConfig } from "src/app/app-config";
 import { FormOption } from "src/app/interfaces/form-option";
 
 export class Settings {
-    appVersion: string = "1.2.1";
+    appVersion: string = "1.2.2";
     vc: any;
     state: any = "READY"; // hardcoded - not needed in this version
     rtr: any;
@@ -70,7 +70,7 @@ export class Settings {
     cameraIcon: string = "icon-camera";
     cameraIconOff: string = "icon-camera-off";
     cameraTooltip: string = "Camera Privacy";
-    cameraTooltipOptions: string = "Choose a camera";
+    cameraTooltipOptions: string = "Select Camera";
 
     phoneOn: boolean = true;
     phoneIcon: string = "icon-phone";
@@ -81,26 +81,33 @@ export class Settings {
     micIcon: string = "icon-mic";
     micIconOff: string = "icon-mic-off";
     micTooltip: string = "Microphone Privacy";
-    micTooltipOptions: string = "Choose a microphone";
+    micTooltipOptions: string = "Select Microphone";
 
     speakerOn: boolean = true;
     speakerIcon: string = "icon-speaker";
     speakerIConOff: string = "icon-speaker-off";
     speakerTooltip: string = "Speaker Privacy";
-    speakerTooltipOptions = "Choose a speaker";
+    speakerTooltipOptions = "Select Speaker";
 
     chatOn: boolean = true;
     chatIcon: string = "icon-chat";
     chatIconOff: string = "icon-chat-off";
     chatTooltip: string = "Show chat";
+    chatTooltip2: string = "Chat";
+    chatTooltip3: string = "New Messages";
 
     shareTooltip: string = "Share";
+    cameraShareTooltip: string = "Camera Share";
+    errorMessagesTooltip: string = "Error Messages";
+    systemMessagesTooltip: string = "System Messages";
+    appVersionTooltip: string = "App Version";
 
     img: string = AppConfig.settings.imgPath;
     leftPaneExpanded = true;
     rightPaneExpanded = false;
     expandIcon = true;
-    sideBarFormLabels = ["Host", "Room Key", "Display Name", "Logger Url", "RoomPin", "ExtData", "ExtDataType"];
+    sideBarFormLabels = ["Host", "Room Key", "Display Name", "Logger Url", "Room Pin", "ExtData", "ExtDataType"];
+    sideBarFormIcons = ["globe2", "key", "person-circle", "pen", "keyboard", "file-bar-graph", "file-earmark-bar-graph"];
     controls: string[] = [];
 
     sideBarForm: FormGroup = new FormGroup({});
@@ -126,4 +133,5 @@ export class Settings {
     bottomPanelSpeaker = new FormGroup({});
     chat: FormControl = new FormControl({ value: '', disabled: !this.connected });
 
+    participantTooltip: string = "Participants";
 }

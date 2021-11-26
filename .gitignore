@@ -51,3 +51,6 @@ firebase.json
 .firebase/hosting.ZGlzdC9odW50ZXItdjAx.cache
 deploy-app.sh
 build-app.sh
+
+# Custom
+/helper

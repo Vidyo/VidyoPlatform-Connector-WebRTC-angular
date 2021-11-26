@@ -69,7 +69,7 @@ export class Base extends Settings {
         if (!cameraPrivacy) {
             this.cameraIcon = "icon-camera";
             this.cameraTooltip = "Camera Privacy";
-            this.showCameraFrame = "";
+            this.showCameraFrame = "p-3 mb-5";
             // set dimensions to auto and enable frame resize / window resize
             setTimeout(() => {
                 node.style.width = "auto";
@@ -159,7 +159,7 @@ export class Base extends Settings {
             this.showCameraFrame = "hide-box";
         }
         else {
-            this.showCameraFrame = "";
+            this.showCameraFrame = "p-3 mb-5";
         }
     }
     /**
@@ -440,5 +440,17 @@ export class Base extends Settings {
      */
     hideLastParticipantStatus(): void {
         this.participantsStatus = "";
+    }
+
+    /**
+     * Get initials from the name
+     * 
+     * @param name String
+     * @returns String
+     */
+    getInitials(name: string = ''): string {
+        return name.toUpperCase().split(/\W/).filter(w => w.length).slice(0, 2).reduce((acc, str) => {
+            return acc += str[0];
+        }, '');
     }
 }

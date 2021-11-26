@@ -37,8 +37,9 @@
 
 .left-panel .section-form .col.label,
 .left-panel .section-form .col.label label {
-  width: 8rem;
-  max-width: 8rem;
+  width: 4rem;
+  max-width: 4rem;
+  margin-left: 1rem;
 }
 
 .left-panel .form-check.form-switch {
@@ -97,9 +98,9 @@
 }
 
 .toolbar-icon {
-  width: 100px;
+  width: 80px;
   height: 60px;
-  background-size: 32px auto;
+  background-size: 24px auto;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(19, 38, 58);
@@ -448,14 +449,30 @@ div.right-panel footer textarea {
   height: 2.2rem;
 }
 
+.right-panel .participants-list .initials {
+  border-radius: 50%;
+  background-color: yellowgreen;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+}
+
 .right-panel .participants-list .name {
   padding-left: 6px;
+}
+
+.right-panel .participants-list .user-initials {
+  vertical-align: middle;
 }
 
 .right-panel .participants-list .toolbar-icon {
   width: 42px;
   height: 32px;
   border-left: 6px solid white;
+  background-color: black;
+  display: inline-block;
 }
 
 .right-panel .participants-list-status {
@@ -505,8 +522,8 @@ div.right-panel footer textarea {
 }
 
 #roomFooter .share-button .bi-projector {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   color: white;
 }
 
@@ -520,6 +537,11 @@ div.right-panel footer textarea {
 #roomFooter .drop-down-select {
   left: -10px;
   position: relative;
+}
+
+#roomFooter .separator {
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .drop-down-select-button .toolbar-icon {
