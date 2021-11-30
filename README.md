@@ -4,7 +4,7 @@ A video conference and chat application.<br>
 
 **Codename:** Hunter<br>
 **Framework:** Angular<br>
-**App version:** 1.2.2<br>
+**App version:** 1.2.3<br>
 **VidyoClient version:** 21.6.0.0027<br>
 
 ## Prerequisites

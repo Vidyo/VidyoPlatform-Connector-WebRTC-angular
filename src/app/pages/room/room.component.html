@@ -201,7 +201,7 @@
                                             <div *ngFor="let msg of chatMessages" class="toast show" role="alert"
                                                 aria-live="assertive" aria-atomic="true">
                                                 <div
-                                                    [class]="(msg.local ? 'bg-success' : 'bg-primary')   + ' text-white toast-header'">
+                                                    [class]="(msg.local ? 'bg-success text-white' : 'bg-light text-black')   + '  toast-header'">
                                                     <strong class="me-auto">{{msg.name}}</strong>
                                                     <small class="text-muted">{{msg.time}}</small>
                                                     <!--
@@ -238,17 +238,21 @@
                         <ng-template ngbNavContent>
                             <table *ngIf="participantsList.length > 0" class="participants-list">
 
-                                <tr class="bg-light" *ngFor="let p of participantsList; index as i">
+                                <tr *ngFor="let p of participantsList; index as i">
                                     <td>
-                                        <table>
+                                        <table class="participant-status shadow">
                                             <tr>
-                                                <td class="user-initials" rowspan="2"><span
-                                                        class="initials">{{getInitials(p.name)}}</span>
+                                                <td [class]=" (p.local ? 'bg-success text-white' : 'another-person') + ' user-initials text-center'"
+                                                    rowspan="2"><span
+                                                        class="initials shadow">{{getInitials(p.name)}}</span>
                                                 </td>
-                                                <td class="name">{{p.name}}</td>
+                                                <td class="name bg-light">
+                                                    <span *ngIf="p.local">You (<i>{{p.name}}</i>)</span>
+                                                    <span *ngIf="!p.local">{{p.name}}</span>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><span [class]="'mic-info ' + (p.micOff ? 'toolbar-icon
+                                                <td class="icons"><span [class]="'mic-info ' + (p.micOff ? 'toolbar-icon
                                                         icon-mic-off' :
                                                         'toolbar-icon icon-mic')"></span>
 
@@ -270,9 +274,10 @@
                                     [attr.aria-label]="phoneTooltip"></button>
                             </div>
 
-                            <div [class]="(participantsStatus == '' ? '' : 'show') + ' bg-success text-white participants-list-status toast align-items-center'"
+                            <div [class]="(participantsStatus == '' ? '' : 'show') + ' bg-light text-black participants-list-status toast align-items-center'"
                                 role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="d-flex">
+                                    <span class="badge bg-info text-dark">Info</span>
                                     <div class="toast-body">
                                         {{participantsStatus}}
                                     </div>

@@ -451,7 +451,6 @@ div.right-panel footer textarea {
 
 .right-panel .participants-list .initials {
   border-radius: 50%;
-  background-color: yellowgreen;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -460,17 +459,34 @@ div.right-panel footer textarea {
 }
 
 .right-panel .participants-list .name {
-  padding-left: 6px;
+  padding-left: 0.5rem;
+}
+
+.right-panel .participants-list .icons {
+  padding-left: 0.2rem;
+}
+
+.right-panel .participants-list .name span {
+  max-width: 13rem;
 }
 
 .right-panel .participants-list .user-initials {
   vertical-align: middle;
 }
 
+.right-panel .participants-list .participant-status {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.right-panel .participants-list .participant-status .user-initials {
+  width: 60px;
+}
+
 .right-panel .participants-list .toolbar-icon {
-  width: 42px;
-  height: 32px;
-  border-left: 6px solid white;
+  width: 32px;
+  height: 24px;
+  filter: invert(1);
   background-color: black;
   display: inline-block;
 }
@@ -478,6 +494,11 @@ div.right-panel footer textarea {
 .right-panel .participants-list-status {
   margin-top: 2rem;
   opacity: 0.8;
+}
+
+.right-panel .participants-list-status .badge {
+  position: relative;
+  top: -1rem;
 }
 
 .right-panel .user-message-area button[disabled] {
@@ -572,4 +593,10 @@ div.right-panel footer textarea {
 
 .shadow-small {
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7) !important;
+}
+
+@media (max-width: 991.98px) {
+  .right-panel .participants-list .name span {
+    max-width: 10rem;
+  }
 }
