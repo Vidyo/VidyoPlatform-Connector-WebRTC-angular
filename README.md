@@ -4,7 +4,7 @@ A video conference and chat application.<br>
 
 **Codename:** Hunter<br>
 **Framework:** Angular<br>
-**App version:** 1.2.3<br>
+**App version:** 1.2.4<br>
 **VidyoClient version:** 21.6.0.0027<br>
 
 ## Prerequisites
@@ -98,3 +98,10 @@ ng-bootstrap v10.0 works only with Bootstrap 4.5 (doesn't support Bootstrap 5.x)
 Tooltip for left panel Show/Hide button must have `bottom` value. Value `right` creates a bug now (Ubuntu/Chrome).
 
 `placement="bottom"`
+
+### ng-bootstrap 12.0.0-beta.4 (Tooltip issue)
+
+Don't use 12.0.0-beta 4
+`npm install @ng-bootstrap/ng-bootstrap@bootstrap5`
+
+core.js:6479 ERROR TypeError: componentFactory.create is not a function

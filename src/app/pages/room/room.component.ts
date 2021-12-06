@@ -9,7 +9,7 @@ declare var VidyoClientLib: any;
 @Component({
   selector: 'app-room',
   templateUrl: './room.component.html',
-  styleUrls: ['./room.component.css'],
+  styleUrls: ['./room.component.less'],
 })
 export class RoomComponent extends VidyoConnector implements OnInit {
   VCLib = VidyoClientLib;

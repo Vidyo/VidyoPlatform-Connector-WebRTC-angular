@@ -3,7 +3,7 @@ import { AppConfig } from "src/app/app-config";
 import { FormOption } from "src/app/interfaces/form-option";
 
 export class Settings {
-    appVersion: string = "1.2.3";
+    appVersion: string = "1.2.4";
     vc: any;
     state: any = "READY"; // hardcoded - not needed in this version
     rtr: any;
