@@ -110,5 +110,5 @@ core.js:6479 ERROR TypeError: componentFactory.create is not a function
 
 Please install the browser's extension.<br>
 Recommended browser extension for Chrome.<br>
-Cross Domain - CORS<br>
+**Cross Domain - CORS**<br>
 https://chrome.google.com/webstore/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai
