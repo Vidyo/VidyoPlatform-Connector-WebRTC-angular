@@ -535,17 +535,25 @@ div.right-panel footer textarea {
 
 #roomFooter {
   height: 56px;
-}
+  .share-button {
+    top: -25px;
+    position: relative;
+    .bi-projector {
+      width: 36px;
+      height: 36px;
+      color: white;
+    }
+  }
 
-#roomFooter .share-button {
-  top: -25px;
-  position: relative;
-}
+  .separator {
+    margin-left: 10px;
+    display: inline-block;
+  }
 
-#roomFooter .share-button .bi-projector {
-  width: 36px;
-  height: 36px;
-  color: white;
+  .drop-down-select {
+    left: -10px;
+    position: relative;
+  }
 }
 
 .drop-down-select-button {
@@ -553,42 +561,32 @@ div.right-panel footer textarea {
   top: -25px;
   right: 30px;
   margin-right: -20px;
-}
 
-#roomFooter .drop-down-select {
-  left: -10px;
-  position: relative;
-}
+  .toolbar-icon {
+    background-position: right;
+    color: white;
+    width: 10px;
+  }
 
-#roomFooter .separator {
-  margin-left: 10px;
-  display: inline-block;
-}
+  .toolbar-icon.btn:focus {
+    box-shadow: none;
+  }
 
-.drop-down-select-button .toolbar-icon {
-  background-position: right;
-  color: white;
-  width: 10px;
-}
+  .dropdown-menu.show {
+    width: 24rem;
+  }
 
-.drop-down-select-button button {
-  z-index: 1;
-}
+  button {
+    z-index: 1;
+  }
 
-.drop-down-select-button .toolbar-icon.btn:focus {
-  box-shadow: none;
-}
-
-.drop-down-select-button select {
-  border: none;
-  outline: none;
-  padding: 0 3rem 0 1rem;
-  /* background-image: none; */
-  box-shadow: none;
-}
-
-.drop-down-select-button .dropdown-menu.show {
-  width: 24rem;
+  select {
+    border: none;
+    outline: none;
+    padding: 0 3rem 0 1rem;
+    /* background-image: none; */
+    box-shadow: none;
+  }
 }
 
 .shadow-small {

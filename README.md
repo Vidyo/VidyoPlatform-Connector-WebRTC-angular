@@ -105,3 +105,10 @@ Don't use 12.0.0-beta 4
 `npm install @ng-bootstrap/ng-bootstrap@bootstrap5`
 
 core.js:6479 ERROR TypeError: componentFactory.create is not a function
+
+### Cross-Origin Resource Sharing (CORS)
+
+Please install the browser's extension.<br>
+Recommended browser extension for Chrome.<br>
+Cross Domain - CORS<br>
+https://chrome.google.com/webstore/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai
